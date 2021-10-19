@@ -10,3 +10,5 @@ libraryDependencies ++= Seq(
 
 enablePlugins(SbtAvrohugger)
 (Compile / sourceGenerators) += (Compile / avroScalaGenerateSpecific).taskValue
+
+credentials += Credentials(Path.userHome / ".ivy2" / ".credentials")
