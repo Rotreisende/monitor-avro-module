@@ -1,0 +1,68 @@
+{
+  "namespace": "ru.releaseSbtTest.user",
+  "name": "User",
+  "type": "record",
+  "doc": "User.info",
+  "fields": [
+    {
+      "name": "hashId",
+      "type": "string",
+      "doc": "Unique id csv file"
+    },
+    {
+      "name": "loadDate",
+      "type": "string",
+      "doc": "Date load csv file is storage"
+    },
+    {
+      "name": "recordId",
+      "type": "string",
+      "doc": "Order number subject in file"
+    },
+    {
+      "name": "clientSin",
+      "type": "string",
+      "doc": "Bank id"
+    },
+    {
+      "name": "surname",
+      "type": "string",
+      "doc": "User surname"
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "doc": "User name"
+    },
+    {
+      "name": "patronymic",
+      "type": ["string", "null"],
+      "doc": "User patronymic"
+    },
+    {
+      "name": "birthDate",
+      "type": "string",
+      "doc": "User birthday"
+    },
+    {
+      "name": "birthPlace",
+      "type": ["string", "null"],
+      "doc": "User birthplace"
+    },
+    {
+      "name": "primaryIdType",
+      "type": "string",
+      "doc": "Document type"
+    },
+    {
+      "name": "primaryIdNumber",
+      "type": "string",
+      "doc": "Document number"
+    },
+    {
+      "name": "deleteFlag",
+      "type": "string",
+      "doc": "Delete subject"
+    }
+  ]
+}
