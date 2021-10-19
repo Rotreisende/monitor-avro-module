@@ -13,3 +13,4 @@ enablePlugins(SbtAvrohugger)
 (Compile / sourceGenerators) += (Compile / avroScalaGenerateSpecific).taskValue
 
 publishTo := Some(Resolver.file("local-ivy", file("path/to/ivy-repo/releases")))
+resolvers += Resolver.mavenLocal
