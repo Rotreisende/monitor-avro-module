@@ -1,8 +1,9 @@
 name := "monitor-avro"
 
-version := "0.1"
-
 scalaVersion := "2.12.0"
+
+ThisBuild / organization := "org.me"
+ThisBuild / version := "0.1-SNAPSHOT"
 
 libraryDependencies ++= Seq(
   Dependencies.avro
@@ -11,4 +12,4 @@ libraryDependencies ++= Seq(
 enablePlugins(SbtAvrohugger)
 (Compile / sourceGenerators) += (Compile / avroScalaGenerateSpecific).taskValue
 
-credentials += Credentials(Path.userHome / ".ivy2" / ".credentials")
+publishTo := Some(Resolver.file("local-ivy", file("path/to/ivy-repo/releases")))
