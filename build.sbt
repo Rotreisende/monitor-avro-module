@@ -1,11 +1,8 @@
-name := "monitor-avro"
+import sbt._
 
-scalaVersion := "2.12.0"
-
-ThisBuild / organization := "org.me"
-ThisBuild / version := "0.1-SNAPSHOT"
-
-libraryDependencies ++= Dependencies.avro
-
-enablePlugins(SbtAvrohugger)
-(Compile / sourceGenerators) += (Compile / avroScalaGenerateSpecific).taskValue
+lazy val MonitorAvro = Project(id = "monitor-avro", base = file("."))
+    .enablePlugins(SbtAvrohugger)
+    .settings(
+      sourceGenerators in Compile += (avroScalaGenerateSpecific in Compile).taskValue,
+      ProjectSettings.Settings
+    )

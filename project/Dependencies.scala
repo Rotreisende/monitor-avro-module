@@ -6,6 +6,6 @@ object Dependencies {
   )
 
   object versions {
-    val avro = "1.10.2"
+    val avro = "1.9.2"
   }
 }

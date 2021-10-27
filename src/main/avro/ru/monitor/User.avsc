@@ -1,8 +1,8 @@
 {
-  "namespace": "ru.releaseSbtTest.user",
+  "namespace": "ru.monitor.user",
   "name": "User",
   "type": "record",
-  "doc": "User.info",
+  "doc": "User info",
   "fields": [
     {
       "name": "hashId",
